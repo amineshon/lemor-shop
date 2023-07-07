@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Robots Meta tags-->
+    <meta name="ROBOTS" content="INDEX, FOLLOW">
+    <meta name="Googlebot" content="index, follow">
+    <meta name="Googlebot-mobile" content="index, follow">
+    <meta name="Googlebot-news" content="index, follow">
+    <meta name="Slurp" content="index, follow">
+    <meta name="Bingbot" content="index, follow">
+    <!-- END Robots Meta tags-->
+    <!-- Mobile Specific Metas -->
+    <!-- Disable Zoom on Mobile Or Tablets < ios 11 -- ios-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!-- END Disable Zoom on Mobile Or Tablets-->
+    <!-- Mobile Chrome-->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-status-bar-style" content="default">
+    <!-- END Mobile Chrome-->
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <!-- END iOS Safari -->
+    <!-- END Mobile Specific Metas -->
+    <!-- Favicon and touch icons  -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/stayle/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/stayle/css/main.css">
+    <title>𝙻𝚎𝚖𝚘𝚛 𝚍𝚎𝚌𝚘𝚛</title>
+</head>
+
+<body>
+
+<div class="w3-content" style="max-width:1200px">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-bar-block w3-white w3-collapse w3-top" style="z-index:3;width:250px" id="mySidebar">
+    <div class="w3-container w3-display-container w3-padding-16">
+        <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
+        <a href="./index.html">
+            <h3 class="w3-wide">
+                <p>
+                    𝙻𝚎𝚖𝚘𝚛 𝚍𝚎𝚌𝚘𝚛
+                </p>
+            </h3>
+        </a>
+    </div>
+    <div class="w3-padding-64 w3-large w3-text-grey" style="font-weight:bold">
+        <a href="#" class="w3-bar-item w3-button">Shirts</a>
+        <a href="#" class="w3-bar-item w3-button">Dresses</a>
+        <a onclick="myAccFunc()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn">
+            𝙻𝚎𝚖𝚘𝚛 𝚍𝚎𝚌𝚘𝚛 <i class="fa fa-caret-down"></i>
+        </a>
+        <div id="demoAcc" class="w3-bar-block w3-hide w3-padding-large w3-medium">
+            <a href="#" class="w3-bar-item w3-button w3-light-grey"><i class="fa fa-caret-right w3-margin-right"></i>Skinny</a>
+            <a href="#" class="w3-bar-item w3-button">Relaxed</a>
+            <a href="#" class="w3-bar-item w3-button">Bootcut</a>
+            <a href="#" class="w3-bar-item w3-button">Straight</a>
+        </div>
+        <a href="#" class="w3-bar-item w3-button">Shop Bomber Jackets</a>
+        <a href="#" class="w3-bar-item w3-button">Shop Kimonos</a>
+        <a href="#" class="w3-bar-item w3-button">Shop Handbags</a>
+        <a href="#" class="w3-bar-item w3-button">Shop Leggings</a>
+    </div>
+    <a href="#footer" class="w3-bar-item w3-button w3-padding">Contact</a>
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding" onclick="document.getElementById('newsletter').style.display='block'">Newsletter</a>
+    <a href="#footer"  class="w3-bar-item w3-button w3-padding">Subscribe</a>
+</nav>
+
+<!-- Top menu on small screens -->
+<a href="http://www.magmond.ir">
+    <header class="w3-bar w3-top w3-hide-large w3-black w3-xlarge">
+        <div class="w3-bar-item w3-padding-24 w3-wide">𝙻𝚎𝚖𝚘𝚛 𝚍𝚎𝚌𝚘𝚛</div>
+        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+    </header>
+</a>>
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:250px">
+
+    <!-- Push down content on small screens -->
+    <div class="w3-hide-large" style="margin-top:83px"></div>
+
+    <!-- Top header -->
+    <header class="w3-container w3-xlarge">
+        <p class="w3-left">Jeans</p>
+        <p class="w3-right">
+            <i class="fa fa-shopping-cart w3-margin-right"></i>
+            <i type="button" id="open_popup" class="fa fa-user-plus"></i>
+        </p>
+    </header>
+
+    <!--popup-->
+    <div class="popup">
+        <div class="content">
+            <div class="close">x</div>
+            <div className="row mt-3">
+                <div className="col-12">
+                    <h1 className="sign-up_title ">ثبت نام</h1>
+                    <form class="needs-validation" novalidate>
+                        <div class="form-row">
+                            <div class="col-md-4 mb-3">
+                                <label >First name</label>
+                                <input
+                                        name="f_name"
+                                        type="text"
+                                        class="form-control f-name"
+                                        id="namef"
+                                        placeholder="First name"
+                                        onChange={this.handelChangeInput("name")}
+                                        value=""
+                                        required>
+                                <div class="valid-feedback">
+                                    Looks good!
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <label>Last name</label>
+                                <input
+                                        name="l_name"
+                                        type="text"
+                                        class="form-control l-name"
+                                        id="namel"
+                                        placeholder="Last name"
+                                        onChange={this.handelChangeInput("family")}
+                                        value=""
+                                        required>
+                                <div class="valid-feedback">
+                                    Looks good!
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 mb-3">
+                                <label>Mobile</label>
+                                <div class="input-group">
+                                    <input
+                                            name="tel"
+                                            type="tel"
+                                            class="form-control maile"
+                                            id="mobiletel"
+                                            placeholder="Mobile"
+                                            aria-describedby="inputGroupPrepend"
+                                            onChange={this.handelChangeInput("tel")}
+                                            required>
+                                    <div class="invalid-feedback">
+                                        Please choose a username.
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="form-row">
+                            <div class="col-md-6 mb-3">
+                                <label for="validationCustom03">address</label>
+                                <input
+                                        name="address"
+                                        type="text"
+                                        class="form-control address"
+                                        id="validationCustom03"
+                                        placeholder="address"
+                                        onChange={this.handelChangeInput("address")}
+                                        required>
+                                <div class="invalid-feedback">
+                                    Please provide a valid city.
+                                </div>
+                            </div>
+                            <div class="col-md-3 mb-3">
+                                <label>password</label>
+                                <input name="password"
+                                       type="text"
+                                       class="form-control state"
+                                       id="password"
+                                       placeholder="password"
+                                       onChange={this.handelChangeInput("password")}
+                                       required>
+                                <div class="invalid-feedback">
+                                    Please provide a valid state.
+                                </div>
+                            </div>
+                            <div class="col-md-3 mb-3">
+
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                                <label class="form-check-label" for="invalidCheck">
+                                    Agree to terms and conditions
+                                </label>
+                                <div class="invalid-feedback">
+                                    You must agree before submitting.
+                                </div>
+                            </div>
+                        </div>
+                        <button onclick="signUp()" class="btn btn-primary" type="button">Complete the order </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--end popup-->
+
+    <!-- Image header -->
+    <div class="w3-display-container w3-container">
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <img src="assets/images/img/cdo-banner.jpg" style="width:100%">
+                <div class="text">Caption Text</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img src="assets/images/img/cdo-banner-3.jpg" style="width:100%">
+                <div class="text">Caption Two</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img src="assets/images/img/cdo-banner-2.jpg" style="width:100%">
+                <div class="text">Caption Three</div>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        </div>
+        <br>
+
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </div>
+
+    <div class="w3-container w3-text-grey" id="jeans">
+        <p>8 items</p>
+    </div>
+    <div class="text_Description">
+        <p>
+            one day,
+i want to honestly say
+  <br/>
+ " i made it ""
+        </p>
+    </div>
+
+    <!-- Product grid -->
+    <div class="w3-row w3-grayscale-amin">
+        <div class="w3-col l3 s6">
+            <div class="w3-container">
+                <div class="w3-display-container">
+                    <img src="assets/images/img/Shop-Face-Mask-Designs.jpg" style="width:100%">
+                    <span class="w3-tag w3-display-topleft">New</span>
+                    <div class="w3-display-middle w3-display-hover">
+                        <button data-name="Shop Face Masks" data-price="$24.99"  id="face-masks" class="w3-button w3-black buy-button">Buy now <i class="fa fa-shopping-cart"></i></button>
+                    </div>
+                </div>
+                <p>Shop Face Masks<br><b>$24.99</b></p>
+            </div>
+            <div class="w3-container">
+                <div class="w3-display-container">
+                    <img src="assets/images/img/Shop-Plates.jpg" style="width:100%">
+                    <span class="w3-tag w3-display-topleft">New</span>
+                    <div class="w3-display-middle w3-display-hover">
+                        <button data-name="Shop Plates" data-price="$19.99" id="shop-plates" class="w3-button w3-black buy-button">Buy now <i class="fa fa-shopping-cart"></i></button>
+                    </div>
+                </div>
+                <p>Shop Plates<br><b>$19.99</b></p>
+            </div>
+        </div>
+
+        <div class="w3-col l3 s6">
+            <div class="w3-container">
+                <div class="w3-display-container">
+                    <img src="assets/images/img/Shop-Kimonos.jpg" style="width:100%">
+                    <span class="w3-tag w3-display-topleft">New</span>
+                    <div class="w3-display-middle w3-display-hover">
+                        <button data-name="Shop Kimonos" data-price="$19.99" id="shop-kimonos" class="w3-button w3-black buy-button">Buy now <i class="fa fa-shopping-cart"></i></button>
+                    </div>
+                </div>
+                <p>Shop Kimonos<br><b>$19.99</b></p>
+            </div>
+            <div class="w3-container">
+                <div class="w3-display-container">
+                    <img src="assets/images/img/Shop-Suitcases.jpg" style="width:100%">
+                    <span class="w3-tag w3-display-topleft">New</span>
+                    <div class="w3-display-middle w3-display-hover">
+                        <button data-name="Shop Suitcases" data-price="$20.50" id="shop-suitcases" class="w3-button w3-black buy-button">Buy now <i class="fa fa-shopping-cart"></i></button>
+                    </div>
+                </div>
+                <p>Shop Suitcases<br><b>$20.50</b></p>
+            </div>
+        </div>
+
+        <div class="w3-col l3 s6">
+            <div class="w3-container">
+                <div class="w3-display-container">
+                    <img src="assets/images/img/Shop-Bomber-Jackets.jpg" style="width:100%">
+                    <span class="w3-tag w3-display-topleft">New</span>
+                    <div class="w3-display-middle w3-display-hover">
+                        <button data-name="Shop Bomber Jackets" data-price="$20.50" id="shop-bomber-jackets" class="w3-button w3-black buy-button">Buy now <i class="fa fa-shopping-cart"></i></button>
+                    </div>
+                </div>
+                <p>Shop Bomber Jackets<br><b>$20.50</b></p>
+            </div>
+            <div class="w3-container">
+                <div class="w3-display-container">
+                    <img src="assets/images/img/Shop-Leggings.jpg" style="width:100%">
+                    <span class="w3-tag w3-display-topleft">Sale</span>
+                    <div class="w3-display-middle w3-display-hover">
+                        <button data-name="Shop Leggings" data-price="$14.99" id="shop-leggings" class="w3-button w3-black buy-button">Buy now <i class="fa fa-shopping-cart"></i></button>
+                    </div>
+                </div>
+                <p>Shop Leggings<br><b class="w3-text-red">$14.99</b></p>
+            </div>
+        </div>
+
+        <div class="w3-col l3 s6">
+            <div class="w3-container">
+                <div class="w3-display-container">
+                    <img src="assets/images/img/Shop-Rugs.jpg" style="width:100%">
+                    <span class="w3-tag w3-display-topleft">New</span>
+                    <div class="w3-display-middle w3-display-hover">
+                        <button data-name="Shop Rugs" data-price="$14.99" id="shop-rugs" class="w3-button w3-black buy-button">Buy now <i class="fa fa-shopping-cart"></i></button>
+                    </div>
+                </div>
+                <p>Shop Rugs<br><b>$14.99</b></p>
+            </div>
+            <div class="w3-container">
+                <div class="w3-display-container">
+                    <img src="assets/images/img/Shop-Handbags.jpg" style="width:100%">
+                    <span class="w3-tag w3-display-topleft">New</span>
+                    <div class="w3-display-middle w3-display-hover">
+                        <button data-name="Shop Handbags" data-price="$24.99" id="shop-handbags" class="w3-button w3-black buy-button">Buy now <i class="fa fa-shopping-cart"></i></button>
+                    </div>
+                </div>
+                <p>Shop Handbags<br><b>$24.99</b></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Subscribe section -->
+   
+    <!-- Footer -->
+    <footer class="w3-padding-64 w3-light-grey w3-small w3-center" id="footer">
+        <div class="w3-row-padding">
+            <div class="w3-col s4">
+                <h4>Contact</h4>
+                <p>Questions? Go ahead.</p>
+                <form action="/action_page.php" target="_blank">
+                    <p><input class="w3-input w3-border" type="text" placeholder="Name" name="Name" required></p>
+                    <p><input class="w3-input w3-border" type="text" placeholder="Email" name="Email" required></p>
+                    <p><input class="w3-input w3-border" type="text" placeholder="Subject" name="Subject" required></p>
+                    <p><input class="w3-input w3-border" type="text" placeholder="Message" name="Message" required></p>
+                    <button type="submit" class="w3-button w3-block w3-black">Send</button>
+                </form>
+            </div>
+
+            <div class="w3-col s4">
+                <h4>About</h4>
+                <p><a href="#">About us</a></p>
+                <p><a href="#">We're hiring</a></p>
+                <p><a href="#">Support</a></p>
+                <p><a href="#">Find store</a></p>
+                <p><a href="#">Shipment</a></p>
+                <p><a href="#">Payment</a></p>
+                <p><a href="#">Gift card</a></p>
+                <p><a href="#">Return</a></p>
+                <p><a href="#">Help</a></p>
+            </div>
+
+            <div class="w3-col s4 w3-justify">
+                <h4>Store</h4>
+                <p><i class="fa fa-fw fa-map-marker"></i> Company Name</p>
+                <p><i class="fa fa-fw fa-phone"></i> 0044123123</p>
+                <p><i class="fa fa-fw fa-envelope"></i> ex@mail.com</p>
+                <h4>We accept</h4>
+                <p><i class="fa fa-fw fa-cc-amex"></i> Amex</p>
+                <p><i class="fa fa-fw fa-credit-card"></i> Credit Card</p>
+                <br>
+                <i class="fa fa-facebook-official w3-hover-opacity w3-large"></i>
+                <i class="fa fa-instagram w3-hover-opacity w3-large"></i>
+                <i class="fa fa-snapchat w3-hover-opacity w3-large"></i>
+                <i class="fa fa-pinterest-p w3-hover-opacity w3-large"></i>
+                <i class="fa fa-twitter w3-hover-opacity w3-large"></i>
+                <i class="fa fa-linkedin w3-hover-opacity w3-large"></i>
+            </div>
+        </div>
+    </footer>
+
+    <div class="w3-black w3-center w3-padding-24">Powered by <a href="https://www.targetdevelopers.com" title="W3.CSS" target="_blank" class="w3-hover-opacity">Target Developers</a></div>
+    <!-- End page content -->
+</div>
+
+<!-- Newsletter Modal -->
+<div id="newsletter" class="w3-modal">
+    <div class="w3-modal-content w3-animate-zoom" style="padding:32px">
+        <div class="w3-container w3-white w3-center">
+            <i onclick="document.getElementById('newsletter').style.display='none'" class="fa fa-remove w3-right w3-button w3-transparent w3-xxlarge"></i>
+            <h2 class="w3-wide">NEWSLETTER</h2>
+            <p>Join our mailing list to receive updates on new arrivals and special offers.</p>
+            <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail"></p>
+            <button type="button" class="w3-button w3-padding-large w3-red w3-margin-bottom" onclick="document.getElementById('newsletter').style.display='none'">Subscribe</button>
+        </div>
+    </div>
+</div>
+<script src="assets/stayle/js/jquery-3.5.1.min.js"></script>
+<script src="assets/stayle/js/bootstrap.bundle.min.js"></script>
+
+    <script src="//code.jquery.com/jquery.min.js"></script>
+    <script src="jquery.okayNav.min.js"></script>
+    <script src="index.js"></script>
+    <script>
+
+
+
+
+        function signUp() {
+
+            // const { name, family, mobile, password } = userInfo[name] = self.val();
+            const telReg = new RegExp("^[0][9][0-9][0-9]{8,8}$");
+            const passReg = new RegExp(
+                "^(?=.*[a-z])(?=.*[A-Z])(?=.*d)(?=.*[#$^+=!*()@%&]).{8,10}$"
+            );
+            if (document.getElementById("namef").value === "") {
+                alert("نام خود را وارد کنید");namel
+            } else if (document.getElementById("namel").value === "") {
+                alert("نام خانوادگی خود را وارد کنید");
+            } else if ((document.getElementById("mobiletel").value === "")) {
+                alert("موبایل خود را وارد کنید");
+            } else if (!telReg.test(mobile)) {
+                alert("شماره موبایل خود را صحیح وارد کنید");
+            } else if (password === "") {
+                alert("رمز عبور خود را وارد کنید");
+            } else if (password.length < 4) {
+                alert("رمز شما کمتر از 4 کارکتر میباشد");
+            } else if (password.length > 10) {
+                alert("رمز عبور شما بیشتر از 10 کارکتر میباشد");
+            }else {
+                function gohome () {
+                    location.href='./index.html';
+                }
+            }
+
+        }
+
+    </script>
+
+
+
+<!--
+<script>
+    // Accordion
+    function myAccFunc() {
+        var x = document.getElementById("demoAcc");
+        if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+        } else {
+            x.className = x.className.replace(" w3-show", "");
+        }
+    }
+
+    // Click on the "Jeans" link on page load to open the accordion for demo purposes
+    document.getElementById("myBtn").click();
+
+
+    // Open and close sidebar
+    function w3_open() {
+        document.getElementById("mySidebar").style.display = "block";
+        document.getElementById("myOverlay").style.display = "block";
+    }
+
+    function w3_close() {
+        document.getElementById("mySidebar").style.display = "none";
+        document.getElementById("myOverlay").style.display = "none";
+    }
+</script>
+-->
+</div>
+</body>
+</html>

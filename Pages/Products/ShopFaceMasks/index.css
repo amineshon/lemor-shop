@@ -1,0 +1,72 @@
+.w3-sidebar a {font-family: "Roboto", sans-serif}
+body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
+
+
+.image-product{
+    width: 26rem;
+    border-radius: 18px;
+    margin: 10px 0 40px 0;
+}
+.box-size{
+    text-align: center;
+    cursor: pointer;
+
+}
+.box-size:hover{
+    border: 2px solid;
+    border-radius: 18px;
+    box-shadow: 0 8px 20px 0 rgba(224, 224, 224, 0.5);
+    line-height: 30px;
+}
+.box-size.active{
+    border: 1px solid #0b2e13;
+    border-radius: 18px;
+    box-shadow: 0 8px 20px 0 rgba(224, 224, 224, 0.5);
+    line-height: 30px;
+}
+.min{
+    border: 2px solid red;
+}
+.input-box{
+    border-radius: 18px;
+    height: 3rem;
+    border: 2px solid;
+    box-shadow: 0 8px 20px 0 rgba(224, 224, 224, 0.5);
+    padding: 0 20px;
+    width: 6rem;
+    outline: none;
+}
+.input-box:after{
+    border: 5px solid #1c7430;
+
+}
+.submit-button{
+    background-color: #000000;
+    color: #ffffff;
+    border-radius: 18px;
+    height: 3rem;
+    width: 8rem;
+}
+.form-box{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin: 45px 0 45px 0;
+}
+.button-icon{
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    display: inline-block;
+}
+.icon{
+    width: 2rem;
+}
+
+
+
+/*@include media-breakpoint-down(sm) {
+
+
+}*/

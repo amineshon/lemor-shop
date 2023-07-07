@@ -1,0 +1,24 @@
+.text-align-center{
+    text-align: center;
+}
+.content-box{
+    box-shadow: 0 8px 20px 0 rgba(224, 224, 224, 0.5);
+    margin-bottom: 50px;
+    border-radius: 18px;
+    padding: 50px;
+    border: 1px solid #b3b8bc;
+}
+.min-title{
+    background-color: #f1f1f1;
+    color: #000000;
+    border-radius: 18px;
+    padding: 10px;
+    text-align: center;
+}
+.details-row{
+    display: flex;
+    justify-content: space-around;
+}
+.details-box{
+    padding: 0px 15%;
+}
